@@ -1,5 +1,7 @@
 Date: 18-May-2024
 
+------VS Code Extention --------------
+
 01. live server-by ritwik dey
 
 =======02. live saas compiler -by Glnn Marks ================
@@ -10,7 +12,7 @@ Date: 18-May-2024
 02> npm install bootstrap (install latested version of bootstrap with scss files)
 
 -----------STEP: 02
-03> Create file SCSS>custom.scss 
+03> Create file SCSS>custom.scss And Import bootstrap Scss file (@import "../node_modules/bootstrap/scss/bootstrap.scss")
 04> Output will show in Css folder (If does not show follow the below instrunction)
 
 To save file inside css folder (if no such folder, it will create it)
@@ -25,3 +27,4 @@ To save file inside css folder (if no such folder, it will create it)
   }]
 
 Now Click on "Watch Sass" bottom bar of VS Code
+
