@@ -1,0 +1,24 @@
+ <header id="main_menu">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+
+        <a class="navbar-brand" href="http://">KIKHOBOR</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainmenu" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mainmenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto"> <!--ms-auto take menu right-->
+          <li ><a class="nav-link" href="">Home</a></li>
+          <li ><a class="nav-link" href="">About us</a></li>
+          <li ><a class="nav-link" href="">Blog</a></li>
+          <li ><a class="nav-link" href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+      </div>
+    </nav>
+
+</header>
