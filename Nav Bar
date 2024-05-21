@@ -1,32 +1,37 @@
- <header id="main_menu">
+
+
+<!---------------navbar ----------------------->
+<header id="main_menu">
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-      <div class="container">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="http://">KIKHOBOR</a>
+            <!-- mobile menu hamburger button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand" href="http://">LOGO</a>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav"> <!--ms-auto(right)-->
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">About us</a></li>
+                    <li><a class="nav-link" href="">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="">Contact Us</a></li>
+                </ul>
+            </div> <!-- ./menu -->
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainmenu" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="mainmenu" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto"> <!--ms-auto take menu right-->
-          <li ><a class="nav-link" href="">Home</a></li>
-          <li ><a class="nav-link" href="">About us</a></li>
-          <li ><a class="nav-link" href="">Blog</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">Action 1</a>
-                <a class="dropdown-item" href="#">Action 2</a>
-            </div>
-        </li>
-          <li ><a class="nav-link" href="">Contact Us</a></li>
-        </ul>
-      </div>
-
-
-      </div>
+        </div> <!-- ./container -->
     </nav>
-
 </header>
+<!------------------------ ./navbar --------------------------->
+
+
+--
