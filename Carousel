@@ -5,7 +5,7 @@
         <div class="carousel-inner"> 
 
          <?php worpress query Start?>
-          
+          //active class should be in first one only
         <div class="carousel-item <?php if ( $testmonials->current_post == 0 ) : ?>active<?php endif; ?>" data-interval="2000">
             <div  class="d-flex flex-column justify-content-center align-items-center text-center" >   I'm 01  </div>
         </div>
