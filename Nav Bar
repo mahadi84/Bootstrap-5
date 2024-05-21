@@ -1,20 +1,30 @@
+#main_menu nav{
+    background: #ebe2d3;
+    font-weight: 500;
+  }
+  #main_menu nav li{
+    margin-left: 15px;
+  }
+  #mainMenu a.active{
+    color: #d62300;
+  }
 
 
-
-<!---------------navbar ----------------------->
+<body data-bs-spy="scroll" data-bs-target="#main_menu">
+<!---------------Header ----------------------->
 
 <header id="main_menu">
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container">
             <!-- logo -->
-            <a class="navbar-brand" href="http://">KIKHOBOR</a>
+            <a class="navbar-brand" href="http://"><h1>LOGO</h1></a>
             <!-- mobile menu hamburger button -->
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainMenu" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- mainMenu -->
             <div id="menu" class="collapse navbar-collapse">
-                <ul class="navbar-nav"> <!--ms-auto(right)-->
+                <ul class="navbar-nav ms-auto"> <!--ms-auto(right)-->
                     <li><a class="nav-link" href="">Home</a></li>
                     <li><a class="nav-link" href="">About us</a></li>
                     <li><a class="nav-link" href="">Blog</a></li>
@@ -34,8 +44,6 @@
     </nav>
 </header>
 
-<!------------------------ ./navbar -------------------------- -->
 
 
-
---
+----------
