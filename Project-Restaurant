@@ -1,3 +1,6 @@
+Date: 23-May-2024
+
+
 00. Navigation, Slider, About Us, Work, Services, Contact Form, Footer
 
 01. Before starting  what are the default CSS I need to add?
@@ -7,6 +10,8 @@
 05. How an input search field and search button does show in one line?
 06. How to decorate Bootsrap ICON in one line?
 07. How is a SECTION HEIGHT measured/set by?
+
+
 
 ==================================================== CSS =========================================
 body{
