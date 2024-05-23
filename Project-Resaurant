@@ -1,3 +1,12 @@
+01. Before starting  what are the default CSS I need to add?
+02. How to change nav-bar background and font weight?
+03. Why set pb-md-5 and top padding 110px?
+04. Why not the best place to add margin and padding in the p and h tag?
+05. How to show in one line input search field and search button?
+06. How to decorate Bootsrap ICON in one line?
+
+
+==================================================== CSS =========================================
 body{
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
@@ -75,8 +84,7 @@ img{
   background: #f5ebdc !important;
 }
 
-
-
+/*--------Default Padding ----------------*/
 #about, #work, #service, #contact{
   padding-top: 110px;
 }
@@ -166,3 +174,302 @@ img{
   font-size: 25px;
 
 }
+
+========================================================== HTML ===========================================
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Restaurant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"  rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body data-bs-spy="scroll" data-bs-target="#main_menu">
+
+
+    <!---------------Header ----------------------->
+
+    <header id="main_menu">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="http://"><img src="images/logo.png" alt="logo"></a>
+                <!-- mobile menu hamburger button -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainMenu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- mainMenu -->
+                <div id="mainMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto"> <!--ms-auto(right)-->
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About us</a></li>
+                        <li><a class="nav-link" href="#work">What we do</a></li>
+                        <li><a class="nav-link" href="#service">Service</a></li>
+                        <li><a class="nav-link" href="#blog">Blog</a></li>                        
+                        <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div> <!-- ./menu -->
+
+            </div> <!-- ./container -->
+        </nav>
+    </header>
+
+
+    <!----------------------------- slider ----------------------->
+
+    <div id="slider">
+
+        <div id="carouselId" class="carousel slide carousel-fade " data-bs-ride="carousel" data-bs-touch="true">
+
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/banner_01.jpg" class="w-100 d-block" alt="First slide" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/banner_02.jpg" class="w-100 d-block" alt="Second slide" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/banner_03.jpg" class="w-100 d-block" alt="Third slide" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!--------------------- About ---------------->
+
+    <div id="about" class="pb-3 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 align-self-center">
+                    <h2>About Us</h2>
+                    <h4>What we do?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, exercitationem neque corporis vel
+                        quaerat quasi.
+                    </p>
+                    <button class="btn btn-info">Learn more</button>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Work-------------------------->
+
+    <div id="work" class="pb-3 pb-md-5 bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3">
+                    <h2>What We Work</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/image-44.jpg" alt="Image" />
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                                voluptas doloribus laudantium suscipit magni. Officiis minus cumque quisquam ullam enim.
+                            </p>
+                            <button type="submit" class="btn btn-info">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/image-45.jpg" alt="Image" />
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                                voluptas doloribus laudantium suscipit magni. Officiis minus cumque quisquam ullam enim.
+                            </p>
+                            <button type="submit" class="btn btn-info">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/image-46.jpg" alt="Image" />
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                                voluptas doloribus laudantium suscipit magni. Officiis minus cumque quisquam ullam enim.
+                            </p>
+                            <button type="submit" class="btn btn-info">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------- Service -------------------->
+
+    <div id="service" class="pb-3 pb-md-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-5">
+                    <img src="images/about-icon1.png" alt="" class="mb-3">
+                    <h4>Delicious Food</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img src="images/about-icon2.png" alt="" class="mb-3">
+                    <h4>Prefessional Service</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img src="images/about-icon3.png" alt="mb-3" class="mb-3">
+                    <h4>Excellent Menu</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------- Contact ----------------------->
+
+    <div id="contact" class="pb-3 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card p-4 text-center">
+                        <div class="card-body">
+                            <h2>Contact Us</h2>
+                            <p>Lorem ipsum dolor sit amet. </p>
+
+                            <form action="" class="mt-3 text-start">
+                                <label for="" class="form-label">Your Name</label>
+                                <input type="em" name="" id="" placeholder="" class="form-control mb-2">
+                                <label for="" class="form-label">Your Email</label>
+                                <input type="email" name="" id="" placeholder="" class="form-control mb-2">
+                                <label for="" class="form-label">Your Phone</label>
+                                <input type="text" name="" id="" placeholder="" class="form-control mb-2">
+                                <label for="" class="form-label">Your Subject</label>
+                                <input type="text" name="" id="" placeholder="" class="form-control mb-2">
+                                <label for="" class="form-label">Your Message</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="" class="form-control mb-2"></textarea>
+                                <input type="submit" value="Send Message" class="btn btn-info">
+                              </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------- Footer ----------------------->
+
+<div id="footer" class="pt-md-5 pb-md-2 py-3">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Our Products</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="">Home</a></li>
+                    <li class="mb-2"><a href="">About</a></li>
+                    <li class="mb-2"><a href="">Blog</a></li>
+                    <li class="mb-2"><a href="">Service</a></li>
+                    <li class="mb-2"><a href="">Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Quick Link</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="">Home</a></li>
+                    <li class="mb-2"><a href="">About</a></li>
+                    <li class="mb-2"><a href="">Term and Condition</a></li>
+                    <li class="mb-2"><a href="">Blog</a></li>
+                    <li class="mb-2"><a href="">Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Terms</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="">Home</a></li>
+                    <li class="mb-2"><a href="">About</a></li>
+                    <li class="mb-2"><a href="">Blog</a></li>
+                    <li class="mb-2"><a href="">Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Search Area</h3>
+                <form action="" class="mb-3">
+                    <div class="input-group">
+                        <input class="form-control d-block" type="search" name="" id=""> 
+                        <button class="btn btn-info" type="submit">Search</button>
+                    </div>
+                </form>
+                <h3>Follow Us</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="http://"><span class="bi bi-facebook"></span></a></li>
+                        <li><a href="http://"><span class="bi bi-twitter-x"></span></a></li>
+                        <li><a href="http://"><span class="bi bi-linkedin"></span></a></li>
+                        <li><a href="http://"><span class="bi bi-instagram"></span></a></li>
+                    </ul>                
+            </div>
+        </div>
+
+
+        <div class="row mt-5 ">
+            <div class="col-md-12 text-center">
+                <hr>
+                <p>All right researved by @ 2024.</p>                             
+            </div>
+        </div>
+
+    </div>
+    </div>       
+
+
+
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
