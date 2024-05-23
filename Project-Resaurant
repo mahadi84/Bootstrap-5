@@ -1,0 +1,168 @@
+body{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+h1{
+  font-weight: 900;
+  line-height: 1em;
+  color: #502314;
+}
+
+h2{
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1em;
+  color: #502314;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #502314;
+}
+
+h4{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #502314;
+}
+
+h5{
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #502314;
+}
+
+h6{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #502314;
+}
+
+p{
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.btn.btn-info{
+  background-color: #d62300;
+  border: 1px solid #d62300;
+  border-radius: 25px;
+  padding: 12px 35px;
+  color: #ffffff;
+  
+}
+.btn-info:hover{
+  background-color: #c94f37;
+  border: 1px solid #c94f37;
+  border-radius: 25px;
+  padding: 12px 35px;
+  color: #ffffff;
+  
+}
+
+.bg-info{
+  background: #f5ebdc !important;
+}
+
+
+
+#about, #work, #service, #contact{
+  padding-top: 110px;
+}
+
+/*--=================================
+            NAVIGATION
+====================================*/
+
+
+#main_menu nav{
+    background: #ebe2d3;
+    font-weight: 500;
+  }
+
+#main_menu nav li{
+    margin-left: 15px;
+  }
+  
+#mainMenu a.active{
+    color: #d62300;
+  }
+
+
+/*--=================================
+            SLIDER AREA
+====================================*/
+  #slider{
+    padding-top: 80px;
+  }
+
+
+/*--=================================
+            ABOUT AREA
+====================================*/
+
+
+/*--=================================
+            WORK AREA
+====================================*/
+
+
+
+/*--=================================
+            SERVICE AREA
+====================================*/
+
+
+/*--=================================
+            CONTACT AREA
+====================================*/
+
+#contact{
+  background-image: url('images/map.jpg');
+}
+
+/*--=================================
+            FOOTER AREA
+====================================*/
+#footer ul li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #262626;
+}
+
+#footer .btn-info{
+  background-color: #d62300;
+  border: 1px solid #d62300;
+  border-radius: 0px;
+  padding: 12px 35px;
+  color: #ffffff;
+  
+}
+
+#footer .btn-info:hover{
+  background-color: #c94f37;
+  border: 1px solid #c94f37;
+  border-radius: 0px;
+  padding: 12px 35px;
+  color: #ffffff;
+  
+}
+
+
+#footer .social li{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 25px;
+
+}
