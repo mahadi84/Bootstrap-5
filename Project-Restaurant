@@ -1,10 +1,12 @@
+
+
 01. Before starting  what are the default CSS I need to add?
-02. How to change nav-bar background and font weight?
+02. How to change the nav-bar background and font weight?
 03. Why set pb-md-5 and top padding 110px?
 04. Why not the best place to add margin and padding in the p and h tag?
-05. How to show in one line input search field and search button?
+05. How an input search field and search button does show in one line?
 06. How to decorate Bootsrap ICON in one line?
-
+07. How is a SECTION HEIGHT measured/set by?
 
 ==================================================== CSS =========================================
 body{
