@@ -1,0 +1,8 @@
+
+-Create Folder with project name
+-Create file name 'SASS/custom.scss' and 
+-Create more files, start with "_" for exmaple: _utilites.scss 
+-Import the files with code @import "_utilities" it to custom.scss;
+
+-Create file index.html with bs5 boiler-plate
+-
