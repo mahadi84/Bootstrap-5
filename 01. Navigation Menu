@@ -1,3 +1,6 @@
+
+======================== CSS ====================
+
 #main_menu{
     background: $lightBg;
     font-weight: $font300;
@@ -20,13 +23,14 @@
     }
   }
 
-======================================== HTML =======================
+========================== HTML =======================
 
 <body data-bs-spy="scroll" data-bs-target="#main_menu">
 <!---------------Header ----------------------->
 
 <nav id="main_menu" class="navbar navbar-expand-md navbar-light sticky-top py-4">
             <div class="container">
+                
                 <!-- logo -->
                 <a class="navbar-brand" href="http://"><img src="img/logo.png" alt="Logo"></a>
                 <!-- mobile menu hamburger button -->
@@ -49,10 +53,10 @@
                         </li>
                         <li><a class="nav-link" href="">Contact Us</a></li>
                     </ul>
-                </div> <!-- ./menu -->
+                </div> <!-- ./mainMenu -->
     
             </div> <!-- ./container -->
-        </nav>
+</nav>
 
 
 
