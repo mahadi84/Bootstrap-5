@@ -1,19 +1,31 @@
 --
 
 
-<div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+<section id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+        
         <div class="carousel-inner"> 
 
-         <?php worpress-query-Start?>
-           <!-- active class must  be in first slide only -->
-        <div class="carousel-item <?php if ( $testmonials->current_post == 0 ) : ?>active<?php endif; ?>" data-interval="2000">
-                <div  class="d-flex flex-column justify-content-center align-items-center text-center" >   
-                 <img src="img/banner_01.jpg" alt="Image01" class="w-100 d-block">
+          <!-- active class should be in first one only -->
+        <div class="carousel-item active" data-interval="2000">
+             <img src="img/banner_01.jpg" alt="Image01" class="img-fluid  d-block">
+             
+            <!-- show text in the middle -->
+                <div class="position-absolute top-0 start-0 h-100 w-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                    <div class="col-md-6 justify-content-center d-flex flex-column">
+                        <h2 class="title100">Business</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, est cum! Porro, quos doloribus. Id!
+                        </p>
+                        <p><a class="btn btn-hero" href="#">Contact Us</a></p>
+                    </div>
+                    </div>
                 </div>
+                </div>
+            <!-- ./show text end -->
         </div>
 
-        <?php worpress-query-End?>
-          
+                 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -23,7 +35,8 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-</div>
+   
+    </section>
 
 
 
