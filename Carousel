@@ -1,7 +1,7 @@
 --
 
 
-<div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+<div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
         <div class="carousel-inner"> 
 
          <?php worpress-query-Start?>
