@@ -1,0 +1,74 @@
+================ _utility.scss ===========
+$font-family: "Poppins", sans-serif;
+
+$primaryColor: #fa983a;
+$secondaryColor: #f58216;
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+$lightBg: #f6f6f6;
+
+$font900: 900;
+$font500: 500;
+$font300: 300;
+
+
+$margin15: 15px;
+$padding120: 120px;
+
+
+body{
+    font-family: $font-family;
+    font-weight: $font300;
+ }
+ 
+ p{
+    font-weight: $font300;
+    margin-bottom: $margin15;
+ }
+ 
+ h1, h2, h3, h4, h5, h6{
+     font-weight: $font300;
+     margin-bottom: $margin15;
+ }
+
+ .title100{
+    font-size: 100px;
+    font-weight: $font900;
+ }
+ 
+ .title60{
+    font-size: 60px;
+    font-weight: $font900;
+ }
+ 
+ .title35{
+    font-size: 35px;
+ }
+ 
+ 
+ img{
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .btn-hero{
+     background: $primaryColor;
+     color: #ffff;
+     border: 1px Solid $primaryColor;
+     padding: 14px 40px;
+     border-radius: 30px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     &:hover{
+         background: $secondaryColor;
+         color: $blackColor; 
+     }
+ }
+
+
+
+
+
+
+-
