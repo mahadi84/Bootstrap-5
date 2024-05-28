@@ -64,6 +64,40 @@ body{
      }
  }
 
+
+
+===========================  HTML   ============================
+<div id="home"></div>
+
+    <!-- Navigation -->
+    <nav id="main_menu" class="navbar navbar-expand-md navbar-light sticky-top py-4">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="http://"><img src="img/logo.png" alt="Logo"></a>
+            <!-- mobile menu hamburger button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainMenu" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- mainMenu -->
+            <div id="mainMenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto"> <!--ms-auto(right)-->
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">About us</a></li>
+                    <li><a class="nav-link" href="">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="">Contact Us</a></li>
+                </ul>
+            </div> <!-- ./menu -->
+        </div> <!-- ./container -->
+    </nav>
+   
 ================= _navigation.scss ===================
 #main_menu{
     background: $lightBg;
@@ -88,6 +122,47 @@ body{
         &.active{color: $primaryColor; }
     }
   }
+
+
+================== SLIDER(HTML) =================
+
+    <section id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">        
+        <div class="carousel-inner"> 
+
+          <!-- active class should be in first one only -->
+        <div class="carousel-item active" data-interval="2000">
+             <img src="img/banner_01.jpg" alt="Image01" class="img-fluid  d-block">
+             
+            <!-- show text in the middle -->
+                <div class="position-absolute top-0 start-0 h-100 w-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                    <div class="col-md-6 justify-content-center d-flex flex-column">
+                        <h2 class="title100">Business</h2>
+                        <p class="title35">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, est cum! Porro, quos doloribus. Id!
+                        </p>
+                        <p><a class="btn btn-hero" href="#">Contact Us</a></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            <!-- ./show text end -->
+        </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+   
+    </section>
+
+
+
 ================== _slider.scss ====================
 #carouselId{
     p{  color: $whiteColor;
@@ -96,6 +171,383 @@ body{
     h2{color: $whiteColor; }
 }
 
+========================= ABOUT(HTML)=================
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h2 class="title60">About Us</h2>
+                    <h6 class="title35">Read Our Company</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium repellat tempore nisi magni quibusdam amet numquam voluptatibus. Facere, temporibus.</p>
+                    <div class="btn btn-hero">Read More</div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+--------------------_about.scss -----------------
+#about{
+ padding-top: $padding120;
+}
+
+
+======================== SERVICES(HTML) ====================
+ <div id="service" class="pb-5">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h6 class="title60">What we do?</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur nemo repellat molestias animi asperiores. Voluptatibus adipisci repellat amet quaerat?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-2">
+                    <div class="card border-0 p-4">
+                        <div class="card-body">
+                                <i class="bi bi-activity icon"></i>
+                            <h4 class="card-title">Business Stratagy</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum exercitationem libero quia officia necessitatibus.</p>
+                        </div>
+                    </div>                    
+                </div>                
+            </div>        
+        </div>
+    </div>
+
+
+------------------- _service.scss  -------------------
+
+#service {
+        padding-top: $padding120;
+    .card{
+        background: $lightBg;
+        border-radius: 10px;
+        transition: 0.5s;
+        &.card:hover{
+            box-shadow: 5px 5px 15px #ddd;
+        }
+    }
+    .icon{
+        color: $primaryColor;
+        font-size: 50px;
+    }
+}
+
+
+=====================  project ====================
+
+    <div id="project" class="pb-5">
+        <div class="container">
+            <div class="row mb-3 text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h6 class="title60">Recent Projects</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur nemo repellat molestias animi asperiores.  molestias animi asperiores.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card border-0 overflow-hidden">
+                        <img src="img/project-1.jpg" alt="project image">
+                    </div>                    
+                </div>
+                
+               
+            </div>        
+        </div>
+    </div>
+
+---------------------------- _project.scss  -------------------------------
+
+#project{
+    padding-top: $padding120;
+
+    .card{
+        img{
+            transition: 0.5s;
+            &:hover{
+              transform: scale(1.2);
+            }
+          }
+    }
+
+}
+
+
+
+=====================    Team   ===================== 
+     <div id="team" class="pb-5">
+        <div class="container">
+            <div class="row mb-3 text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h6 class="title60">Meet the Team</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur nemo repellat molestias animi asperiores.  molestias animi asperiores.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 pt-2">
+                    <div class="card border-0">
+                        <img src="img/team-1.jpg" alt="379X514" class="position-absolute start-0 top-0 w-75">
+                        <div class="card-body">
+                            <ul class="social">
+                                <li><a href="http://"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="http://"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="http://"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="http://"><i class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                            <h4 class="card-title">Jonathon Doe</h4>
+                            <p class="card-text">Web Developer</p>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>        
+        </div>
+    </div>
+
+---------------------------- _team.scss  -------------------------------
+#team{
+ padding-top: $padding120;
+  
+ .card{
+  &:hover{
+    .card-body{
+    width: 100%;
+    }
+  }
+ }
+ 
+  .card-body{
+   background-color: $primaryColor;
+   height: 520px;
+   width: 75%;
+   transition: 0.3s;
+  }
+  ul.social{
+    text-align: right; 
+    list-style: none;
+    margin-bottom: 250px; //gap between ul and text
+    padding-right: 20px;
+    // margin: 0 0 250px;
+    // padding: 0 20px 0 0;
+  }
+  li{
+    margin-bottom: 15px; //Gap between icons
+    display: block;
+  }
+  a{
+    color: $blackColor;
+    font-size: 22px;
+    &:hover{
+      color: $lightBg;
+    }
+  }
+
+  .card-title{
+    margin-bottom: 2px;
+  }
+  .card-text{
+    font-weight: $font500;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+===================== NEWSLETTER ========================
+    <div id="newsletter" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                   <h4>Subscribe Now and Quench Your Wanderlust!</h4>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn btn-news">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+---------------------------- _newslatter.scss  -------------------------------
+#newsletter{
+  background: $secondaryColor;
+  h4{
+    color: $whiteColor;
+    margin: 0;
+  }
+
+  .btn-news{
+    border: 0;
+    border-radius: 0;
+    background: $whiteColor;
+    padding:18px 60px;
+    color: $blackColor;
+    transition: 0.3s;
+    &:hover{
+      color: $whiteColor;
+      background: $primaryColor;
+
+    }
+  }
+
+}
+
+=====================  FOOTER  ========================
+<div id="footer" class="pt-5 pb-2">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-4">
+                <img src="img/logo_footer.png" alt="">
+                <p class="mt-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est expedita quibusdam maxime sapiente eos quos possimus autem porro vero necessitatibus?
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-envelope"></i> info@gmail.com</li>
+                    <li class="mb-2"><i class="bi bi-telephone"></i> 880 01719-474226</li>
+                    <li class="mb-2"><i class="bi bi-geo-alt"></i> 123, New York, USA</li>
+                </ul>
+                
+                
+            </div>
+            <div class="col-md-4">
+                <h5> Our Recent Blog</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"> <a href="#">Lorem ipsum dolor sit amet.</a><span>May 28, 2024</span></li>
+                    <li class="mb-2"> <a href="#">Lorem ipsum dolor sit amet.</a><span>May 28, 2024</span></li>
+                    <li class="mb-2"> <a href="#">Lorem ipsum dolor sit amet.</a><span>May 28, 2024</span></li>
+                    <li class="mb-2"> <a href="#">Lorem ipsum dolor sit amet.</a><span>May 28, 2024</span></li>
+                </ul>
+
+            </div>
+            <div class="col-md-4">
+                <h5>Subscribe to our Newslatter</h5>
+                
+                <form action="">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label  for="email">Email</label>
+                      </div>
+                      
+                      <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        <label for="pwd">Password</label>
+                      </div> 
+                    <input type="submit" value="Subscribe">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center ">
+               <p class="copyright">Copyright @2024</p> 
+            </div>
+        </div>
+    </div>
+    <p class="top-up">
+        <a href="#home">
+            <i class="bi bi-arrow-up-square-fill"></i>
+        </a>
+    </p>
+</div>
+
+---------------------------- _footer.scss  -------------------------------
+#footer{
+    background: #262626;
+    color: $whiteColor;
+    text-decoration: none;
+    position: relative;
+
+
+// Section title
+    h5{
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+      p{
+        color: $lightBg;
+      }
+
+    //address
+
+    
+    i{
+       margin-right: 10px;
+    }
+
+
+
+
+    // Blog
+    ul{
+        a{            
+            text-decoration: none;
+            color: $lightBg;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+
+        span{
+            font-size: 12px;
+            display: block;
+        }
+    }
+
+    // Form
+        h5{
+            color: $whiteColor;
+        }
+
+        input{
+            border-radius: 0;
+            border: 0;
+            background-color: #5e5e5e;
+        }
+
+        input[type="submit"]{
+            border-radius: 0;
+            border: 0;
+            padding: 17px;
+            width: 100%;
+            transition: 0.5s;
+            background-color: $secondaryColor;
+            &:hover{
+                color: $whiteColor;
+                background-color: $primaryColor;
+            }
+        }
+        
+    // Copyright
+        .copyright{
+            font-size: 14px;
+            color: $secondaryColor;
+        }
+
+
+    // Top button
+    p.top-up{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        margin: 0;
+       
+        a{
+            font-size: 30px;
+            color: $secondaryColor;
+            &:hover{
+               color: $primaryColor;
+            }
+
+        }
+    }
+}
 
 
 -
