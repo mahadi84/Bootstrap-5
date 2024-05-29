@@ -1,16 +1,21 @@
+================================ QUESTION ===================================
+
+
+
 ================ _utility.scss ===========
+
 $font-family: "Poppins", sans-serif;
 
-$primaryColor: #fa983a;
-$secondaryColor: #f58216;
-$blackColor: #000000;
-$whiteColor: #ffffff;
+$colorPrimary: #fa983a;
+$colorSecondary: #fad390;
+$colorBlack: #000000;
+$colorWhite: #ffffff;
 
 $lightBg: #f6f6f6;
 
-$font900: 900;
-$font500: 500;
-$font300: 300;
+$fontLg: 900;
+$fontMd: 500;
+$fontSm: 300;
 
 $margin15: 15px;
 $padding120: 120px;
@@ -18,27 +23,27 @@ $padding120: 120px;
 
 body{
     font-family: $font-family;
-    font-weight: $font300;
+    font-weight: $fontSm;
  }
  
  p{
-    font-weight: $font300;
+    font-weight: $fontSm;
     margin-bottom: $margin15;
  }
  
  h1, h2, h3, h4, h5, h6{
-     font-weight: $font300;
+     font-weight: $fontMd;
      margin-bottom: $margin15;
  }
 
  .title100{
     font-size: 100px;
-    font-weight: $font900;
+    font-weight: $fontLg;
  }
  
  .title60{
     font-size: 60px;
-    font-weight: $font900;
+    font-weight: $fontLg;
  }
  
  .title35{
@@ -51,19 +56,20 @@ body{
  }
  
  .btn-hero{
-     background: $primaryColor;
+     background: $colorPrimary;
      color: #ffff;
-     border: 1px Solid $primaryColor;
-     padding: 14px 40px;
+     border: 1px Solid $colorPrimary;
+     padding: 16px 40px;
      border-radius: 30px;
-     text-transform: capitalize;
+     text-transform: uppercase;
      letter-spacing: 1px;
      &:hover{
-         background: $secondaryColor;
-         color: $blackColor; 
+         background: $colorSecondary;
+         color: $colorBlack; 
      }
  }
 
+ 
 
 
 ===========================  NAVIGATION   ============================
@@ -101,38 +107,45 @@ body{
 ================= _navigation.scss ===================
 #main_menu{
     background: $lightBg;
-    font-weight: $font300;
-    border-bottom: 1px solid $whiteColor;
-    box-shadow: 0 0 10px $whiteColor;
+    font-weight: $fontSm;
+    border-bottom: 1px solid $colorWhite;
+    box-shadow: 0 0 10px $colorWhite;
 }
   
 #main_menu .navbar-brand{
-    img{ max-width: 200px; }
+    img{
+    max-width: 200px;
+    }
 }
 
-#mainMenu{
-    li{ margin: 0 8px; }
+#mainMenu {
+    li{
+        margin: 0 8px;
+    }
     li a{
-        font-weight: $font500;
+        font-weight: $fontMd;
         font-size: 16px;
-        color: $blackColor;
+        color: $colorBlack;
         &:hover{
-            color: $primaryColor;
+            color: $colorPrimary;
         }
-        &.active{color: $primaryColor; }
+        &.active{
+            color: $colorPrimary;
+        }
     }
   }
 
 
 ================== SLIDER(HTML) =================
 
-    <section id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">        
+ <!-- slider -->
+    <section id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+        
         <div class="carousel-inner"> 
 
           <!-- active class should be in first one only -->
         <div class="carousel-item active" data-interval="2000">
-             <img src="img/banner_01.jpg" alt="Image01" class="img-fluid  d-block">
-             
+             <img src="img/banner_01.jpg" alt="1920X800" class="img-fluid  d-block">             
             <!-- show text in the middle -->
                 <div class="position-absolute top-0 start-0 h-100 w-100">
                 <div class="container h-100">
@@ -148,8 +161,9 @@ body{
                 </div>
             <!-- ./show text end -->
         </div>
+
           
-        </div>
+        </div> <!--./carousel-inner -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -165,14 +179,17 @@ body{
 
 ================== _slider.scss ====================
 #carouselId{
-    p{  color: $whiteColor;
+    p{
+        color: $colorWhite;
         font-size: 24px;
     }
-    h2{color: $whiteColor; }
+    h2{
+        color: $colorWhite;
+    }
 }
 
 ========================= ABOUT(HTML)=================
-<div id="about">
+<div id="about" class="pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 align-self-center">
@@ -182,7 +199,7 @@ body{
                     <div class="btn btn-hero">Read More</div>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/about.png" alt="">
+                    <img src="img/about.png" alt="650X764">
                 </div>
             </div>
         </div>
@@ -196,28 +213,29 @@ body{
 
 
 ======================== SERVICES(HTML) ====================
- <div id="service" class="pb-5">
+     <!-- Service -->
+    <div id="service" class="pb-5">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-md-8 offset-md-2 text-center">
                     <h6 class="title60">What we do?</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur nemo repellat molestias animi asperiores. Voluptatibus adipisci repellat amet quaerat?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lat amet quaerat?</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 pt-2">
                     <div class="card border-0 p-4">
                         <div class="card-body">
-                                <i class="bi bi-activity icon"></i>
+                            <i class="bi bi-activity icon"></i>
                             <h4 class="card-title">Business Stratagy</h4>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum exercitationem libero quia officia necessitatibus.</p>
                         </div>
                     </div>                    
-                </div>                
+                </div>
+
             </div>        
         </div>
     </div>
-
 
 ------------------- _service.scss  -------------------
 
@@ -232,30 +250,29 @@ body{
         }
     }
     .icon{
-        color: $primaryColor;
+        color: $colorPrimary;
         font-size: 50px;
     }
 }
 
 
-=====================  project ====================
+===================== PROJECT-HTML ====================
 
     <div id="project" class="pb-5">
         <div class="container">
-            <div class="row mb-3 text-center">
-                <div class="col-md-8 offset-md-2">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2 text-center">
                     <h6 class="title60">Recent Projects</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur nemo repellat molestias animi asperiores.  molestias animi asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. molestias animi asperiores.</p>
                 </div>
             </div>
             <div class="row">
 
                 <div class="col-md-4 mb-3">
                     <div class="card border-0 overflow-hidden">
-                        <img src="img/project-1.jpg" alt="project image">
+                        <img src="img/project-1.jpg" alt="600X399 project image">
                     </div>                    
-                </div>
-                
+                </div>               
                
             </div>        
         </div>
@@ -278,9 +295,8 @@ body{
 }
 
 
-
-=====================    Team   ===================== 
-     <div id="team" class="pb-5">
+=====================   TEAM   ===================== 
+    <div id="team" class="pb-5">
         <div class="container">
             <div class="row mb-3 text-center">
                 <div class="col-md-8 offset-md-2">
@@ -304,61 +320,62 @@ body{
                             <p class="card-text">Web Developer</p>
                         </div>
                     </div>                    
-                </div>
-
+                </div> 
+                            
             </div>        
         </div>
     </div>
 
+
 ---------------------------- _team.scss  -------------------------------
 #team{
- padding-top: $padding120;
-  
- .card{
-  &:hover{
-    .card-body{
-    width: 100%;
-    }
-  }
- }
- 
-  .card-body{
-   background-color: $primaryColor;
-   height: 520px;
-   width: 75%;
-   transition: 0.3s;
-  }
-  ul.social{
-    text-align: right; 
-    list-style: none;
-    margin-bottom: 250px; //gap between ul and text
-    padding-right: 20px;
-    // margin: 0 0 250px;
-    // padding: 0 20px 0 0;
-  }
-  li{
-    margin-bottom: 15px; //Gap between icons
-    display: block;
-  }
-  a{
-    color: $blackColor;
-    font-size: 22px;
-    &:hover{
-      color: $lightBg;
-    }
-  }
+    padding-top: $padding120;
+      
+      .card{
+        &:hover{
+          .card-body{
+          width: 100%;
+          }
+        }
+      }
+    
+      .card-body{
+      background-color: $colorPrimary;
+      height: 520px;
+      width: 75%;
+      transition: 0.3s;
+      }
 
-  .card-title{
-    margin-bottom: 2px;
-  }
-  .card-text{
-    font-weight: $font500;
-    font-size: 14px;
-    margin: 0;
-  }
+      ul.social{
+        text-align: right; 
+        list-style: none;
+        margin-bottom: 250px; //gap between ul and text
+        padding-right: 20px;
+      }
+      
+      li{
+        margin-bottom: 15px; //Gap between icons
+        display: block; //display icon by line
+      }
+      a{
+        color: $colorBlack;
+        font-size: 22px;
+        &:hover{
+          color: $lightBg;
+        }
+      }
+
+      .card-title{
+        margin-bottom: 2px;
+      }
+      .card-text{
+        font-weight: $fontMd;
+        font-size: 14px;
+        margin: 0;
+      }
 }
-
 ===================== NEWSLETTER ========================
+  
     <div id="newsletter" class="py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -374,22 +391,22 @@ body{
 
 ---------------------------- _newslatter.scss  -------------------------------
 #newsletter{
-  background: $secondaryColor;
+  background: $colorSecondary;
   h4{
-    color: $whiteColor;
+    color: $colorWhite;
     margin: 0;
   }
 
   .btn-news{
     border: 0;
     border-radius: 0;
-    background: $whiteColor;
+    background: $colorWhite;
     padding:18px 60px;
-    color: $blackColor;
+    color: $colorBlack;
     transition: 0.3s;
     &:hover{
-      color: $whiteColor;
-      background: $primaryColor;
+      color: $colorWhite;
+      background: $colorPrimary;
 
     }
   }
@@ -397,9 +414,12 @@ body{
 }
 
 =====================  FOOTER  ========================
-<div id="footer" class="pt-5 pb-2">
+
+
+<footer id="footer" class="pt-5 pb-2">
     <div class="container">
         <div class="row gx-5">
+
             <div class="col-md-4">
                 <img src="img/logo_footer.png" alt="">
                 <p class="mt-3">
@@ -409,9 +429,7 @@ body{
                     <li class="mb-2"><i class="bi bi-envelope"></i> info@gmail.com</li>
                     <li class="mb-2"><i class="bi bi-telephone"></i> 880 01719-474226</li>
                     <li class="mb-2"><i class="bi bi-geo-alt"></i> 123, New York, USA</li>
-                </ul>
-                
-                
+                </ul>              
             </div>
             <div class="col-md-4">
                 <h5> Our Recent Blog</h5>
@@ -450,47 +468,34 @@ body{
             </div>
         </div>
     </div>
-    <p class="top-up">
-        <a href="#home">
-            <i class="bi bi-arrow-up-square-fill"></i>
-        </a>
-    </p>
-</div>
+    <p class="top-up"><a href="#home"><i class="bi bi-arrow-up-square-fill"></i> </a></p>
+</footer>
+
+
 
 ---------------------------- _footer.scss  -------------------------------
 #footer{
     background: #262626;
-    color: $whiteColor;
+    color: $colorWhite;
     text-decoration: none;
     position: relative;
 
-
-// Section title
+    //email, phone & address
+    i{ margin-right: 10px;}
+ 
+    // Column-title ex: our blog, Newsletter
     h5{
         font-size: 20px;
         margin-bottom: 25px;
-      }
-      p{
-        color: $lightBg;
-      }
-
-    //address
-
-    
-    i{
-       margin-right: 10px;
     }
-
-
-
-
-    // Blog
+   
+    // Our blog
     ul{
         a{            
             text-decoration: none;
             color: $lightBg;
             &:hover{
-                color: $primaryColor;
+                color: $colorPrimary;
             }
         }
 
@@ -500,11 +505,7 @@ body{
         }
     }
 
-    // Form
-        h5{
-            color: $whiteColor;
-        }
-
+    //Newsletter Form
         input{
             border-radius: 0;
             border: 0;
@@ -517,19 +518,18 @@ body{
             padding: 17px;
             width: 100%;
             transition: 0.5s;
-            background-color: $secondaryColor;
+            background-color: $colorSecondary;
             &:hover{
-                color: $whiteColor;
-                background-color: $primaryColor;
+                color: $colorWhite;
+                background-color: $colorPrimary;
             }
         }
         
     // Copyright
-        .copyright{
+        p.copyright{
             font-size: 14px;
-            color: $secondaryColor;
+            color: $colorSecondary;
         }
-
 
     // Top button
     p.top-up{
@@ -540,14 +540,20 @@ body{
        
         a{
             font-size: 30px;
-            color: $secondaryColor;
+            color: $colorSecondary;
             &:hover{
-               color: $primaryColor;
+               color: $colorPrimary;
             }
 
         }
     }
 }
+
+
+
+
+
+
 
 
 -
