@@ -16,11 +16,10 @@ form-floating, list-unstyled,
 text-uppercase, text-lowercase, text-capitalize
 
 overflow-hidden
-display:block, d-block, 
 transition: 0.3s;
 transform: scale(1.2);
-border-bottom: 1px solid $colorWhite;
 box-shadow: 5px 5px 15px #ddd;
+display:block, d-block, 
             
 
 
