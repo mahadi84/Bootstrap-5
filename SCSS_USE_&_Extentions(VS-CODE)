@@ -1,6 +1,25 @@
-Date: 18-May-2024
 
-------VS Code Extention --------------
+======================================== How to use ===============================
+
+STEP_01:
+========
+-Create A Folder with "Project Name"
+-Create file name "SASS/custom.scss" and 
+-Create more files, start with "_" for exmaple: _utilites.scss 
+-Import the files with code @import "_utilities" to custom.scss;
+
+STEP_02:
+========
+-Create file index.html with bs5 boiler-plate and include automatic generated css/custom.css 
+
+STEP_03:
+========
+--Click watch scss on VS-CODE
+
+
+
+
+================================ VS Code Extention ==================================
 
 01. live server-by ritwik dey
 
