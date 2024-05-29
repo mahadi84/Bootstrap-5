@@ -2,7 +2,7 @@
 
 -------- WHEN TO USE? ------------
 
-py-4, px-4, gx-5, h-100, w-100, border-0, 
+py-4, px-4, gx-5, h-100, w-100,  width: 75%,  border-0, 
 img-fluid, offset-md-2,
 
 
@@ -20,6 +20,7 @@ transition: 0.3s;
 transform: scale(1.2);
 box-shadow: 5px 5px 15px #ddd;
 display:block, d-block, 
+
             
 
 
