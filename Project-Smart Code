@@ -1,13 +1,19 @@
 ================================ QUESTION ===================================
 
 -------- WHEN TO USE? ------------
+
 py-4, px-4, gx-5, h-100, w-100, border-0, img-fluid
-display:block, d-block, offset-md-2, overflow-hidden
+
+offset-md-2, overflow-hidden
 align-items-center, align-self-center, justify-content-center,
-position: relative, position-absolute, top-0 start-0 
 
-form-floating, list-unstyled, uppercase
+position: relative, position-absolute, 
+top-0, start-0, bottom: 10px; right: 10px;
 
+form-floating, list-unstyled, 
+text-uppercase, text-lowercase, text-capitalize
+
+display:block, d-block, 
 transition: 0.3s;
 transform: scale(1.2);
 border-bottom: 1px solid $colorWhite;
