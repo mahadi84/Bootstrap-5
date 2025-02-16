@@ -4,8 +4,8 @@ Date: 23-May-2024
 <body class="d-flex">
   <form action="" class="form-login text-center text-white">
     <h2 class="mb-3">User Login</h2>
-    <input id="emailAddress" type="email" class="form-control mb-3" placeholder="Email Address" required>
-    <input id="password" type="password" class="form-control mb-3" placeholder="Enter your password" required>
+    <input id="emailAddress" name="email" type="email" class="form-control mb-3" placeholder="Email Address" required>
+    <input id="password" name="password" type="password" class="form-control mb-3" placeholder="Enter your password" required>
     <div class="checkbox mb-3">
       <label for="">
         <input type="checkbox" value="remember-me"> Remember me
